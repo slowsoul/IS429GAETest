@@ -7,7 +7,7 @@ todoApp.controller("LoginController", ["$scope", "$firebase", "$firebaseSimpleLo
 
   $scope.loaded = false;
 
-  var ref = new Firebase('https://is429-demo.firebaseio.com/todos');
+  var ref = new Firebase('https://shenrui1992.firebaseio.com/todos');
   $scope.auth = $firebaseSimpleLogin(ref);
   $scope.todos = $firebase(ref);
   $scope.todos.$bind($scope, "todos");
